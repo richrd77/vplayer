@@ -1,3 +1,3 @@
 <div class="wrapper">
-    <vp-folder *ngFor="let f of paths" [folderName]="f"></vp-folder>
+    <vp-folder *ngFor="let f of paths" [folderName]="f" (click)="foldrclick(f)"></vp-folder>
 </div>

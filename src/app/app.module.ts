@@ -9,6 +9,8 @@ import { AudioComponent } from './components/common/audio/audio.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatModule } from './mat/mat.module';
 import { FolderComponent } from './components/common/folder/folder.component';
+import { FileComponent } from './components/common/file/file.component';
+import { FolderDetailsComponent } from './components/common/folder-details/folder-details.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { FolderComponent } from './components/common/folder/folder.component';
     HomeComponent,
     VideoComponent,
     AudioComponent,
-    FolderComponent
+    FolderComponent,
+    FileComponent,
+    FolderDetailsComponent
   ],
   imports: [
     BrowserModule,
