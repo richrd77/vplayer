@@ -1,0 +1,26 @@
+header {
+    box-shadow: 0 1px 8px 0 #f3f3f3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3em;
+    height: 5em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 100;
+    > span {
+        font-size: 2em;
+        font-weight: bold;
+    }
+    > button {
+        background-color: transparent;
+        border: transparent;
+        font-size: 3em;
+        > mat-icon {
+            font-size: inherit;
+            cursor: pointer;
+        }
+    }
+}

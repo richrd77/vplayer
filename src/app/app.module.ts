@@ -11,6 +11,7 @@ import { MatModule } from './mat/mat.module';
 import { FolderComponent } from './components/common/folder/folder.component';
 import { FileComponent } from './components/common/file/file.component';
 import { FolderDetailsComponent } from './components/common/folder-details/folder-details.component';
+import { HeaderComponent } from './components/common/header/header.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FolderDetailsComponent } from './components/common/folder-details/folde
     AudioComponent,
     FolderComponent,
     FileComponent,
-    FolderDetailsComponent
+    FolderDetailsComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
