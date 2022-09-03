@@ -12,6 +12,7 @@ import { FolderComponent } from './components/common/folder/folder.component';
 import { FileComponent } from './components/common/file/file.component';
 import { FolderDetailsComponent } from './components/common/folder-details/folder-details.component';
 import { HeaderComponent } from './components/common/header/header.component';
+import { FileService } from './services/file.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import { HeaderComponent } from './components/common/header/header.component';
     BrowserAnimationsModule,
     MatModule,
   ],
-  providers: [],
+  providers: [FileService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

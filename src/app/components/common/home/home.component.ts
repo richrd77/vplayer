@@ -9,7 +9,6 @@ import { VideoComponent } from '../video/video.component';
   selector: 'vp-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
-  providers: [FileService]
 })
 export class HomeComponent implements OnInit {
 

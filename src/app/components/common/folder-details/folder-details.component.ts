@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { FileService } from 'src/app/services/file.service';
 
 @Component({
   selector: 'vp-folder-details',
@@ -15,7 +16,7 @@ export class FolderDetailsComponent implements OnInit {
     'C:\\Users\\RICHARD\\source\\vplayer\\android\\app\\build\\outputs\\apk\\debug2.mp3',
   ];
 
-  constructor(private activeRoute: ActivatedRoute) {
+  constructor(private activeRoute: ActivatedRoute, private fs: FileService) {
     this.current = '';
   }
 
@@ -23,7 +24,10 @@ export class FolderDetailsComponent implements OnInit {
     this.activeRoute.params.subscribe((e) => {
       console.log(e.folder);
       this.current = e.folder;
-    })
+      this.fs.ExtractFiles(e.folder).subscribe(s => {
+        console.log('det - comp', s);
+      });
+    });
   }
 
 }
